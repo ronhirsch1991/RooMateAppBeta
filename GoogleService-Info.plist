@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>8580277538-4s6ctatb8q4a701i90hiv13464n4uu5u.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.8580277538-4s6ctatb8q4a701i90hiv13464n4uu5u</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBIQU5CVmIMP_soy6_xjMlRNzlB-0MsoK8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>8580277538</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.apple.RooMateBeta</string>
+	<key>PROJECT_ID</key>
+	<string>roomatebeta</string>
+	<key>STORAGE_BUCKET</key>
+	<string>roomatebeta.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:8580277538:ios:4864e74b2dce8dc409f17b</string>
+	<key>DATABASE_URL</key>
+	<string>https://roomatebeta.firebaseio.com</string>
+</dict>
+</plist>
