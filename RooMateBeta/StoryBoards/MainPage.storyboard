@@ -10,7 +10,7 @@
         <!--Main Page View Controller-->
         <scene sceneID="jCN-hm-4T7">
             <objects>
-                <viewController storyboardIdentifier="MainPageID" id="r3K-y3-TyE" customClass="MainPageViewController" customModule="RooMate" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainPageID" id="r3K-y3-TyE" customClass="MainPageViewController" customModule="RooMateBeta" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vCG-jy-jxJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,6 +108,17 @@
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="JrI-9h-teA">
                                 <rect key="frame" x="27" y="71" width="20" height="20"/>
                             </activityIndicatorView>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lRK-hh-xhW">
+                                <rect key="frame" x="286" y="239" width="128" height="30"/>
+                                <color key="backgroundColor" red="0.90059641450000005" green="0.90059641450000005" blue="0.90059641450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="iw0-XI-Mfd"/>
+                                </constraints>
+                                <state key="normal" title="Exit"/>
+                                <connections>
+                                    <action selector="logOfTapped:" destination="r3K-y3-TyE" eventType="touchUpInside" id="tyb-id-2KD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -122,11 +133,13 @@
                             <constraint firstItem="9ge-1h-sHp" firstAttribute="trailing" secondItem="icb-SP-Pr0" secondAttribute="trailing" id="VDk-1I-CFa"/>
                             <constraint firstItem="Xod-UT-UhC" firstAttribute="leading" secondItem="9ge-1h-sHp" secondAttribute="leading" constant="5" id="gKH-tS-gMO"/>
                             <constraint firstItem="mGD-kk-LAK" firstAttribute="leading" secondItem="Xod-UT-UhC" secondAttribute="trailing" constant="20" id="gmb-tm-vcZ"/>
+                            <constraint firstItem="9ge-1h-sHp" firstAttribute="trailing" secondItem="lRK-hh-xhW" secondAttribute="trailing" id="kjo-qT-kOl"/>
                             <constraint firstItem="JrI-9h-teA" firstAttribute="centerY" secondItem="Xod-UT-UhC" secondAttribute="centerY" id="l7k-NI-HNs"/>
                             <constraint firstItem="TVf-6J-JsG" firstAttribute="top" secondItem="yD0-PI-dDZ" secondAttribute="bottom" constant="5" id="loN-df-gja"/>
                             <constraint firstItem="Jda-g1-pk9" firstAttribute="top" secondItem="9ge-1h-sHp" secondAttribute="top" id="nhP-OM-9Fm"/>
                             <constraint firstItem="9ge-1h-sHp" firstAttribute="trailing" secondItem="Jda-g1-pk9" secondAttribute="trailing" id="rVh-dm-oD3"/>
                             <constraint firstItem="9ge-1h-sHp" firstAttribute="trailing" secondItem="fxg-eF-kr2" secondAttribute="trailing" id="smp-FR-dme"/>
+                            <constraint firstItem="lRK-hh-xhW" firstAttribute="top" secondItem="icb-SP-Pr0" secondAttribute="bottom" constant="5" id="uIj-kA-ZaA"/>
                             <constraint firstItem="JrI-9h-teA" firstAttribute="centerX" secondItem="Xod-UT-UhC" secondAttribute="centerX" id="zNS-q9-phs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9ge-1h-sHp"/>
@@ -140,6 +153,7 @@
                         <outletCollection property="allMainOptions" destination="kTu-lU-U8g" collectionClass="NSMutableArray" id="XLm-8M-fRR"/>
                         <outletCollection property="allMainOptions" destination="fxg-eF-kr2" collectionClass="NSMutableArray" id="J8U-7l-QXC"/>
                         <outletCollection property="allMainOptions" destination="icb-SP-Pr0" collectionClass="NSMutableArray" id="zbr-c4-f3U"/>
+                        <outletCollection property="allMainOptions" destination="lRK-hh-xhW" collectionClass="NSMutableArray" id="LAx-Tw-yGB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rdv-ih-dBt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
