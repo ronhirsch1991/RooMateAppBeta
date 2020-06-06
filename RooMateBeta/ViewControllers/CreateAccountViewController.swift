@@ -160,13 +160,16 @@ class CreateAccountViewController: UIViewController, UIImagePickerControllerDele
             errorMassage.removeLast(2)
             let curAlert = errorViewer.showErrorView(errorMessage_: errorMassage)
             self.present(curAlert, animated: true, completion: nil)
+            createAccountActivityIndicator.stopAnimating()
+            self.createAccountActivityIndicator.isHidden = true
             return
         }
         if password != repeatedPassword
         {
             let curAlert = errorViewer.showErrorView(errorMessage_: "passwords are not the same")
             self.present(curAlert, animated: true, completion: nil)
-            print("password and repeat passwort are not the same")
+            createAccountActivityIndicator.stopAnimating()
+            self.createAccountActivityIndicator.isHidden = true
             return
         }
         

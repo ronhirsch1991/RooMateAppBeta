@@ -116,6 +116,7 @@
                                 </constraints>
                                 <state key="normal" title="Exit"/>
                                 <connections>
+                                    <action selector="exitTapped:" destination="r3K-y3-TyE" eventType="touchUpInside" id="4Mt-Su-YHn"/>
                                     <action selector="logOfTapped:" destination="r3K-y3-TyE" eventType="touchUpInside" id="tyb-id-2KD"/>
                                 </connections>
                             </button>

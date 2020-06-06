@@ -99,6 +99,12 @@ class MainPageViewController: UIViewController
         
     }
     
+    
+    @IBAction func exitTapped(_ sender: UIButton)
+    {
+        exit(0)
+    }
+    
     /*
     // MARK: - Navigation
 
