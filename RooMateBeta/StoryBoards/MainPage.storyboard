@@ -36,6 +36,9 @@
                                             <constraint firstAttribute="height" constant="50" id="m12-Ju-FFQ"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="messageIcon"/>
+                                        <connections>
+                                            <action selector="messagesTapped:" destination="r3K-y3-TyE" eventType="touchUpInside" id="U2k-6t-oNQ"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGD-kk-LAK">
                                         <rect key="frame" x="89" y="10" width="39" height="21"/>
@@ -155,11 +158,22 @@
                         <outletCollection property="allMainOptions" destination="fxg-eF-kr2" collectionClass="NSMutableArray" id="J8U-7l-QXC"/>
                         <outletCollection property="allMainOptions" destination="icb-SP-Pr0" collectionClass="NSMutableArray" id="zbr-c4-f3U"/>
                         <outletCollection property="allMainOptions" destination="lRK-hh-xhW" collectionClass="NSMutableArray" id="LAx-Tw-yGB"/>
+                        <segue destination="1jj-5R-d2t" kind="show" identifier="goToMessages" id="ADL-V5-nFm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rdv-ih-dBt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3465.217391304348" y="-608.03571428571422"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="eiv-if-d7Y">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Messages" id="1jj-5R-d2t" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="KbT-O0-bmp"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JJG-Fu-4eA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2764" y="-479"/>
         </scene>
         <!--WelcomeViewID-->
         <scene sceneID="jHh-ib-c5h">
@@ -169,7 +183,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yle-GS-yyO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2854" y="-608"/>
+            <point key="canvasLocation" x="-2764" y="-655"/>
         </scene>
     </scenes>
     <resources>

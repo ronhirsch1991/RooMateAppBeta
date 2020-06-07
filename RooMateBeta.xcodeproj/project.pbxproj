@@ -17,9 +17,11 @@
 		56C2F20E24837FCF0017A89F /* AccessDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C2F20A24837FCF0017A89F /* AccessDB.swift */; };
 		56C2F2122483802D0017A89F /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C2F2102483802D0017A89F /* MainPage.storyboard */; };
 		56C2F2132483802D0017A89F /* CreateNewAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C2F2112483802D0017A89F /* CreateNewAccount.storyboard */; };
+		56C74692248CC5F600913958 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C74691248CC5F600913958 /* Messages.storyboard */; };
+		56C74694248CC61800913958 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C74693248CC61800913958 /* MessagesViewController.swift */; };
+		56C74696248CD1EB00913958 /* FirebaseMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C74695248CD1EB00913958 /* FirebaseMessages.swift */; };
 		56F91DC6248381DC00EDD602 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F91DC1248381DC00EDD602 /* HomePageViewController.swift */; };
 		56F91DC7248381DC00EDD602 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F91DC2248381DC00EDD602 /* MainPageViewController.swift */; };
-		56F91DC8248381DC00EDD602 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F91DC3248381DC00EDD602 /* MessageViewController.swift */; };
 		56F91DC9248381DC00EDD602 /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F91DC4248381DC00EDD602 /* CreateAccountViewController.swift */; };
 		56F91DCA248381DC00EDD602 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F91DC5248381DC00EDD602 /* SigninViewController.swift */; };
 		56F91DCC2483828700EDD602 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F91DCB2483828700EDD602 /* AppDelegate.swift */; };
@@ -40,9 +42,11 @@
 		56C2F20A24837FCF0017A89F /* AccessDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessDB.swift; sourceTree = "<group>"; };
 		56C2F2102483802D0017A89F /* MainPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
 		56C2F2112483802D0017A89F /* CreateNewAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateNewAccount.storyboard; sourceTree = "<group>"; };
+		56C74691248CC5F600913958 /* Messages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
+		56C74693248CC61800913958 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		56C74695248CD1EB00913958 /* FirebaseMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMessages.swift; sourceTree = "<group>"; };
 		56F91DC1248381DC00EDD602 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		56F91DC2248381DC00EDD602 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
-		56F91DC3248381DC00EDD602 /* MessageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		56F91DC4248381DC00EDD602 /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
 		56F91DC5248381DC00EDD602 /* SigninViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
 		56F91DCB2483828700EDD602 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				56C2F20A24837FCF0017A89F /* AccessDB.swift */,
+				56C74695248CD1EB00913958 /* FirebaseMessages.swift */,
 				56C2F20824837FCF0017A89F /* ErrorsViewController.swift */,
 				56C2F20724837FCF0017A89F /* ImageUtils.swift */,
 				56C2F20924837FCF0017A89F /* Logger.swift */,
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				56C2F2102483802D0017A89F /* MainPage.storyboard */,
+				56C74691248CC5F600913958 /* Messages.storyboard */,
 				56C2F2112483802D0017A89F /* CreateNewAccount.storyboard */,
 				56C2F1F824837F1A0017A89F /* Main.storyboard */,
 			);
@@ -131,8 +137,8 @@
 			isa = PBXGroup;
 			children = (
 				56F91DC1248381DC00EDD602 /* HomePageViewController.swift */,
+				56C74693248CC61800913958 /* MessagesViewController.swift */,
 				56F91DC2248381DC00EDD602 /* MainPageViewController.swift */,
-				56F91DC3248381DC00EDD602 /* MessageViewController.swift */,
 				56F91DC4248381DC00EDD602 /* CreateAccountViewController.swift */,
 				56F91DC5248381DC00EDD602 /* SigninViewController.swift */,
 			);
@@ -213,6 +219,7 @@
 				56C2F1FF24837F1D0017A89F /* LaunchScreen.storyboard in Resources */,
 				56C2F2132483802D0017A89F /* CreateNewAccount.storyboard in Resources */,
 				56C2F1FC24837F1D0017A89F /* Assets.xcassets in Resources */,
+				56C74692248CC5F600913958 /* Messages.storyboard in Resources */,
 				56C2F1FA24837F1A0017A89F /* Main.storyboard in Resources */,
 				56F91DCE2483844200EDD602 /* GoogleService-Info.plist in Resources */,
 			);
@@ -287,13 +294,14 @@
 				56F91DCC2483828700EDD602 /* AppDelegate.swift in Sources */,
 				56C2F20E24837FCF0017A89F /* AccessDB.swift in Sources */,
 				56F91DC7248381DC00EDD602 /* MainPageViewController.swift in Sources */,
-				56F91DC8248381DC00EDD602 /* MessageViewController.swift in Sources */,
 				56C2F20D24837FCF0017A89F /* Logger.swift in Sources */,
 				56F91DC6248381DC00EDD602 /* HomePageViewController.swift in Sources */,
+				56C74694248CC61800913958 /* MessagesViewController.swift in Sources */,
 				56C2F20C24837FCF0017A89F /* ErrorsViewController.swift in Sources */,
 				56F91DCA248381DC00EDD602 /* SigninViewController.swift in Sources */,
 				56F91DC9248381DC00EDD602 /* CreateAccountViewController.swift in Sources */,
 				56C2F1F524837F1A0017A89F /* SceneDelegate.swift in Sources */,
+				56C74696248CD1EB00913958 /* FirebaseMessages.swift in Sources */,
 				56C2F20B24837FCF0017A89F /* ImageUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
