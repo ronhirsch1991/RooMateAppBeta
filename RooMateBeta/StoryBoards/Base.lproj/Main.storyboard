@@ -43,9 +43,18 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k5a-Sl-S9P">
+                                <rect key="frame" x="192" y="719" width="30" height="30"/>
+                                <state key="normal" title="Test"/>
+                                <connections>
+                                    <segue destination="M2d-w3-KEH" kind="show" id="gKt-Le-ngZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="k5a-Sl-S9P" firstAttribute="top" secondItem="TRp-q9-RwM" secondAttribute="bottom" constant="94" id="Pqo-va-pC6"/>
+                            <constraint firstItem="k5a-Sl-S9P" firstAttribute="centerX" secondItem="TRp-q9-RwM" secondAttribute="centerX" id="lef-E5-0FO"/>
                             <constraint firstItem="N75-kO-BmS" firstAttribute="centerY" secondItem="O1Q-ui-ngg" secondAttribute="centerY" id="upR-vd-4sV"/>
                             <constraint firstItem="N75-kO-BmS" firstAttribute="centerX" secondItem="O1Q-ui-ngg" secondAttribute="centerX" id="vS4-y2-W8u"/>
                         </constraints>
@@ -223,6 +232,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qlT-bY-Xu6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3464" y="-1342"/>
+        </scene>
+        <!--Messages-->
+        <scene sceneID="UrM-Nc-lRn">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Messages" id="M2d-w3-KEH" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="RhP-oB-MY8"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Edw-45-mgF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2730" y="-863"/>
         </scene>
         <!--MainPageID-->
         <scene sceneID="HSW-u2-oOj">

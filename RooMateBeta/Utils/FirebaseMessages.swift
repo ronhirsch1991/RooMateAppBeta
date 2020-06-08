@@ -12,9 +12,17 @@ import Firebase
 class FireBaseMessages
 {
     let logger = Logger()
+    var messagesRef: DatabaseReference!
     
     init()
     {
-        // do nothing ?
+        messagesRef = Database.database().reference().child("messages")
+    }
+    
+    func a(txt: String)
+    {
+        let childRef = messagesRef.childByAutoId()
+        let values = ["text": txt, "to": "test1"]
+        childRef.updateChildValues(values)
     }
 }

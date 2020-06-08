@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		567F928D248E1A8000C00DC3 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567F928C248E1A8000C00DC3 /* Users.swift */; };
 		56C2F1F524837F1A0017A89F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C2F1F424837F1A0017A89F /* SceneDelegate.swift */; };
 		56C2F1FA24837F1A0017A89F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C2F1F824837F1A0017A89F /* Main.storyboard */; };
 		56C2F1FC24837F1D0017A89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C2F1FB24837F1D0017A89F /* Assets.xcassets */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		567F928C248E1A8000C00DC3 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
 		56C2F1EF24837F1A0017A89F /* RooMateBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RooMateBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C2F1F424837F1A0017A89F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		56C2F1F924837F1A0017A89F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		567F928B248E1A6F00C00DC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				567F928C248E1A8000C00DC3 /* Users.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		56C2F1E624837F1A0017A89F = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +108,7 @@
 		56C2F1F124837F1A0017A89F /* RooMateBeta */ = {
 			isa = PBXGroup;
 			children = (
+				567F928B248E1A6F00C00DC3 /* Model */,
 				56C2F20F2483802D0017A89F /* StoryBoards */,
 				56F91DC0248381DC00EDD602 /* ViewControllers */,
 				56C2F20624837F840017A89F /* Utils */,
@@ -300,6 +311,7 @@
 				56C2F20C24837FCF0017A89F /* ErrorsViewController.swift in Sources */,
 				56F91DCA248381DC00EDD602 /* SigninViewController.swift in Sources */,
 				56F91DC9248381DC00EDD602 /* CreateAccountViewController.swift in Sources */,
+				567F928D248E1A8000C00DC3 /* Users.swift in Sources */,
 				56C2F1F524837F1A0017A89F /* SceneDelegate.swift in Sources */,
 				56C74696248CD1EB00913958 /* FirebaseMessages.swift in Sources */,
 				56C2F20B24837FCF0017A89F /* ImageUtils.swift in Sources */,

@@ -22,25 +22,38 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lhG-BF-vrd">
-                                <rect key="frame" x="100" y="234" width="214" height="34"/>
+                                <rect key="frame" x="100" y="725" width="214" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XGj-kv-s5S">
-                                <rect key="frame" x="189" y="340" width="36" height="30"/>
+                                <rect key="frame" x="189" y="769" width="36" height="30"/>
                                 <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendTapped:" destination="3PB-FV-KSc" eventType="touchUpInside" id="wND-zn-bpc"/>
+                                </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HCu-Ct-Kl0">
+                                <rect key="frame" x="0.0" y="120" width="414" height="600"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="600" id="d5O-QE-PDY"/>
+                                </constraints>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="fwD-K8-fh6" firstAttribute="top" secondItem="l6F-tx-W26" secondAttribute="top" constant="50" id="APx-XD-uii"/>
                             <constraint firstItem="lhG-BF-vrd" firstAttribute="leading" secondItem="l6F-tx-W26" secondAttribute="leading" constant="100" id="Crv-Rd-hFm"/>
-                            <constraint firstItem="lhG-BF-vrd" firstAttribute="top" secondItem="fwD-K8-fh6" secondAttribute="bottom" constant="119" id="EGo-uj-Gbn"/>
                             <constraint firstItem="l6F-tx-W26" firstAttribute="trailing" secondItem="lhG-BF-vrd" secondAttribute="trailing" constant="100" id="M7e-kz-iBl"/>
                             <constraint firstItem="fwD-K8-fh6" firstAttribute="leading" secondItem="l6F-tx-W26" secondAttribute="leading" constant="150" id="OHP-Mz-VSG"/>
+                            <constraint firstItem="HCu-Ct-Kl0" firstAttribute="top" secondItem="fwD-K8-fh6" secondAttribute="bottom" constant="5" id="Ub0-lI-UrQ"/>
+                            <constraint firstItem="HCu-Ct-Kl0" firstAttribute="leading" secondItem="l6F-tx-W26" secondAttribute="leading" id="dZH-hF-V2a"/>
+                            <constraint firstItem="l6F-tx-W26" firstAttribute="trailing" secondItem="HCu-Ct-Kl0" secondAttribute="trailing" id="fNp-NV-RWm"/>
                             <constraint firstItem="l6F-tx-W26" firstAttribute="trailing" secondItem="fwD-K8-fh6" secondAttribute="trailing" constant="150" id="h8z-co-c27"/>
                             <constraint firstItem="XGj-kv-s5S" firstAttribute="centerX" secondItem="lhG-BF-vrd" secondAttribute="centerX" id="jUM-0U-3nv"/>
-                            <constraint firstItem="XGj-kv-s5S" firstAttribute="top" secondItem="lhG-BF-vrd" secondAttribute="bottom" constant="72" id="s0P-Q2-qwa"/>
+                            <constraint firstItem="lhG-BF-vrd" firstAttribute="top" secondItem="HCu-Ct-Kl0" secondAttribute="bottom" constant="5" id="jdu-h1-8xb"/>
+                            <constraint firstItem="XGj-kv-s5S" firstAttribute="top" secondItem="lhG-BF-vrd" secondAttribute="bottom" constant="10" id="s0P-Q2-qwa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="l6F-tx-W26"/>
                     </view>
@@ -48,6 +61,7 @@
                         <outlet property="messageTextField" destination="lhG-BF-vrd" id="Qt3-4c-FBT"/>
                         <outlet property="sendButton" destination="XGj-kv-s5S" id="teb-2S-HR4"/>
                         <outlet property="userNameLabel" destination="fwD-K8-fh6" id="1Y5-Uu-bLr"/>
+                        <outlet property="usersTableView" destination="HCu-Ct-Kl0" id="Vnt-3R-8Wz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pm7-bu-gNM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
