@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		567F928D248E1A8000C00DC3 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567F928C248E1A8000C00DC3 /* Users.swift */; };
+		567F92C0248EA12F00C00DC3 /* MessagesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567F92BF248EA12F00C00DC3 /* MessagesTableViewController.swift */; };
+		567F92C2248EA3F800C00DC3 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567F92C1248EA3F800C00DC3 /* UsersTableViewCell.swift */; };
 		56C2F1F524837F1A0017A89F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C2F1F424837F1A0017A89F /* SceneDelegate.swift */; };
 		56C2F1FA24837F1A0017A89F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C2F1F824837F1A0017A89F /* Main.storyboard */; };
 		56C2F1FC24837F1D0017A89F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56C2F1FB24837F1D0017A89F /* Assets.xcassets */; };
@@ -19,7 +21,6 @@
 		56C2F2122483802D0017A89F /* MainPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C2F2102483802D0017A89F /* MainPage.storyboard */; };
 		56C2F2132483802D0017A89F /* CreateNewAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C2F2112483802D0017A89F /* CreateNewAccount.storyboard */; };
 		56C74692248CC5F600913958 /* Messages.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C74691248CC5F600913958 /* Messages.storyboard */; };
-		56C74694248CC61800913958 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C74693248CC61800913958 /* MessagesViewController.swift */; };
 		56C74696248CD1EB00913958 /* FirebaseMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C74695248CD1EB00913958 /* FirebaseMessages.swift */; };
 		56F91DC6248381DC00EDD602 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F91DC1248381DC00EDD602 /* HomePageViewController.swift */; };
 		56F91DC7248381DC00EDD602 /* MainPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F91DC2248381DC00EDD602 /* MainPageViewController.swift */; };
@@ -32,6 +33,8 @@
 
 /* Begin PBXFileReference section */
 		567F928C248E1A8000C00DC3 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		567F92BF248EA12F00C00DC3 /* MessagesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesTableViewController.swift; sourceTree = "<group>"; };
+		567F92C1248EA3F800C00DC3 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
 		56C2F1EF24837F1A0017A89F /* RooMateBeta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RooMateBeta.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C2F1F424837F1A0017A89F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		56C2F1F924837F1A0017A89F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,7 +48,6 @@
 		56C2F2102483802D0017A89F /* MainPage.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainPage.storyboard; sourceTree = "<group>"; };
 		56C2F2112483802D0017A89F /* CreateNewAccount.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CreateNewAccount.storyboard; sourceTree = "<group>"; };
 		56C74691248CC5F600913958 /* Messages.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Messages.storyboard; sourceTree = "<group>"; };
-		56C74693248CC61800913958 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
 		56C74695248CD1EB00913958 /* FirebaseMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseMessages.swift; sourceTree = "<group>"; };
 		56F91DC1248381DC00EDD602 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		56F91DC2248381DC00EDD602 /* MainPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPageViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,16 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		567F92BC248EA06C00C00DC3 /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				567F92BF248EA12F00C00DC3 /* MessagesTableViewController.swift */,
+				567F92C1248EA3F800C00DC3 /* UsersTableViewCell.swift */,
+			);
+			name = TableViewController;
+			path = RooMateBeta/TableViewController;
+			sourceTree = SOURCE_ROOT;
+		};
 		56C2F1E624837F1A0017A89F = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +122,7 @@
 			children = (
 				567F928B248E1A6F00C00DC3 /* Model */,
 				56C2F20F2483802D0017A89F /* StoryBoards */,
+				567F92BC248EA06C00C00DC3 /* TableViewController */,
 				56F91DC0248381DC00EDD602 /* ViewControllers */,
 				56C2F20624837F840017A89F /* Utils */,
 				56C2F1F424837F1A0017A89F /* SceneDelegate.swift */,
@@ -148,7 +161,6 @@
 			isa = PBXGroup;
 			children = (
 				56F91DC1248381DC00EDD602 /* HomePageViewController.swift */,
-				56C74693248CC61800913958 /* MessagesViewController.swift */,
 				56F91DC2248381DC00EDD602 /* MainPageViewController.swift */,
 				56F91DC4248381DC00EDD602 /* CreateAccountViewController.swift */,
 				56F91DC5248381DC00EDD602 /* SigninViewController.swift */,
@@ -307,11 +319,12 @@
 				56F91DC7248381DC00EDD602 /* MainPageViewController.swift in Sources */,
 				56C2F20D24837FCF0017A89F /* Logger.swift in Sources */,
 				56F91DC6248381DC00EDD602 /* HomePageViewController.swift in Sources */,
-				56C74694248CC61800913958 /* MessagesViewController.swift in Sources */,
 				56C2F20C24837FCF0017A89F /* ErrorsViewController.swift in Sources */,
 				56F91DCA248381DC00EDD602 /* SigninViewController.swift in Sources */,
 				56F91DC9248381DC00EDD602 /* CreateAccountViewController.swift in Sources */,
+				567F92C0248EA12F00C00DC3 /* MessagesTableViewController.swift in Sources */,
 				567F928D248E1A8000C00DC3 /* Users.swift in Sources */,
+				567F92C2248EA3F800C00DC3 /* UsersTableViewCell.swift in Sources */,
 				56C2F1F524837F1A0017A89F /* SceneDelegate.swift in Sources */,
 				56C74696248CD1EB00913958 /* FirebaseMessages.swift in Sources */,
 				56C2F20B24837FCF0017A89F /* ImageUtils.swift in Sources */,

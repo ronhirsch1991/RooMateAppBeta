@@ -47,7 +47,7 @@
                                 <rect key="frame" x="192" y="719" width="30" height="30"/>
                                 <state key="normal" title="Test"/>
                                 <connections>
-                                    <segue destination="M2d-w3-KEH" kind="show" id="gKt-Le-ngZ"/>
+                                    <segue destination="7XU-l1-Yze" kind="show" id="Fau-DR-vzc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -234,14 +234,14 @@
             <point key="canvasLocation" x="-3464" y="-1342"/>
         </scene>
         <!--Messages-->
-        <scene sceneID="UrM-Nc-lRn">
+        <scene sceneID="EyY-Ur-X2C">
             <objects>
-                <viewControllerPlaceholder storyboardName="Messages" id="M2d-w3-KEH" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="RhP-oB-MY8"/>
+                <viewControllerPlaceholder storyboardName="Messages" id="7XU-l1-Yze" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="1Ip-5P-0de"/>
                 </viewControllerPlaceholder>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Edw-45-mgF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agJ-p7-1d0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2730" y="-863"/>
+            <point key="canvasLocation" x="-2730" y="-895"/>
         </scene>
         <!--MainPageID-->
         <scene sceneID="HSW-u2-oOj">

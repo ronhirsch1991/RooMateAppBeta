@@ -118,9 +118,9 @@ class MainPageViewController: UIViewController
     */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if let newVc = segue.destination as? MessagesViewController
+        if let newVc = segue.destination as? MessagesTableViewController
         {
-            newVc.userNameString += userNameString
+            // newVc.userNameString += userNameString
         }
     }
 
