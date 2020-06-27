@@ -18,7 +18,6 @@ class MainPageViewController: UIViewController
     
     private var helloName = "Hello "
     private var imageUtils: ImageUtils = ImageUtils()
-    private var accessToUsersDB: AccessDataBase = AccessDataBase()
     public var userNameString = ""
     public var userProfilePicturePath: String? = ""
     public var createAccountProfileImage: UIImage? = nil

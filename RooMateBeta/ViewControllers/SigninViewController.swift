@@ -34,7 +34,6 @@ class SigninViewController: UIViewController, UINavigationControllerDelegate, UI
     @IBOutlet weak var display: UILabel?
     
     private var signInAuthentication: Bool = false
-    private var accessToUsersDB: AccessDataBase = AccessDataBase()
     private var currentUserName: String? = nil
     private var currentPassword: String? = nil
     private var userProfileImage: String? = nil

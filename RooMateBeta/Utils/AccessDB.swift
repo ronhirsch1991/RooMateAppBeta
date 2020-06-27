@@ -22,6 +22,7 @@ let COULDNT_OPEN_DB     =   (-2)
 let UNEXPECTED_ERROR    =   (-3)
 let ERROR               =   "ERROR"
 
+let accessToUsersDB: AccessDataBase = AccessDataBase()
 class AccessDataBase
 {
     var fireBaseDB: Firestore!
@@ -488,6 +489,41 @@ class AccessDataBase
                 completionHandler(urlString)
             }
             
+        })
+    }
+    
+    func getAllUsers(completionHandler:@escaping (_ users: [User]) -> Void)
+    {
+        var curRef: CollectionReference? = nil
+        curRef = self.fireBaseDB.collection("Users")
+        curRef?.getDocuments(completion: { (querySnapshot, err) in
+            if let err = err
+            {
+                print("Error getting documents: \(err)")
+            }
+            else
+            {
+
+                if let documents = querySnapshot?.documents
+                {
+                    var readUsers: [User] = [User]()
+                    for document in documents
+                    {
+                         if let tmp = document.data() as NSDictionary?
+                         {
+                            if let curUserName = tmp.object(forKey: "UserName") as? String
+                            {
+                                if let currentProfPicturePath = tmp.object(forKey: "ProfilePicture") as? String
+                                {
+                                    let curUser: User = User(userName_: curUserName, userProfileImage: currentProfPicturePath)
+                                    readUsers.append(curUser)
+                                }
+                            }
+                        }
+                    }
+                    completionHandler(readUsers)
+                }
+            }
         })
     }
     

@@ -19,18 +19,33 @@ class UsersTableViewCell: UITableViewCell {
         userNameTextView.isScrollEnabled = false // this will cause the cell to be bigger in order to present all the text content
         return userNameTextView
     }()
+    
+    var userProfilePicture: UIImage?
+    
+    var userProfileImageView: UIImageView = {
+       var userProfileImageView = UIImageView()
+        userProfileImageView.translatesAutoresizingMaskIntoConstraints = false
+        return userProfileImageView
+    }()
+    
     var userNameTextView = UITextView()
     
     // init(userName: String)
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?)
     {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        self.addSubview(userProfileImageView)
         self.addSubview(userNameView)
         
-        userNameView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
-        userNameView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        userProfileImageView.leftAnchor.constraint(equalTo: self.leftAnchor).isActive = true
+        userProfileImageView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
+        userProfileImageView.widthAnchor.constraint(equalToConstant: 64).isActive = true
+        userProfileImageView.heightAnchor.constraint(equalToConstant: 64).isActive = true
+        
+        userNameView.leftAnchor.constraint(equalTo: self.userProfileImageView.rightAnchor).isActive = true
+        userNameView.rightAnchor.constraint(equalTo: self.rightAnchor).isActive = true
         userNameView.bottomAnchor.constraint(equalTo: self.bottomAnchor).isActive = true
-        userNameView.widthAnchor.constraint(equalTo: self.heightAnchor).isActive = true
+        userNameView.topAnchor.constraint(equalTo: self.topAnchor).isActive = true
     }
     
     required init?(coder: NSCoder) {
@@ -42,6 +57,10 @@ class UsersTableViewCell: UITableViewCell {
         if let userNameString = userNameString
         {
             userNameView.text = userNameString
+        }
+        if let userProfilePicture = userProfilePicture
+        {
+            userProfileImageView.image = userProfilePicture
         }
     }
 }

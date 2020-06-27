@@ -23,4 +23,9 @@ class User
     {
         return userName
     }
+    
+    func getProfileImagePath() -> String
+    {
+        return profileImage
+    }
 }

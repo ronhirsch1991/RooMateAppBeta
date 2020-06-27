@@ -10,7 +10,7 @@ import UIKit
 
 class MessagesTableViewController: UITableViewController {
 
-    var users = ["aasdasdasdassaddastretsaasdasdasdassaddastretsaasdasdasdassaddsasasdassadastrets", "b", "c"]
+    var users = [User]()
     
     override func viewDidLoad()
     {
@@ -21,9 +21,16 @@ class MessagesTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        accessToUsersDB.getAllUsers(completionHandler: {[weak self]
+            (users) in
+            guard let `self` = self else { return }
+            self.users = users
+            self.tableView.reloadData()
+        })
         self.tableView.register(UsersTableViewCell.self, forCellReuseIdentifier: "userName")
         self.tableView.rowHeight = UITableView.automaticDimension
-        self.tableView.estimatedRowHeight = 100
+        self.tableView.estimatedRowHeight = 64
     }
 
     // MARK: - Table view data source
@@ -41,7 +48,11 @@ class MessagesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "userName", for: indexPath) as! UsersTableViewCell
-        cell.userNameString = users[indexPath.row]
+        cell.userNameString = users[indexPath.row].getUserName()
+        let resource = users[indexPath.row].getProfileImagePath()
+        let url = URL(string: resource)
+        let data = try? Data(contentsOf: url!)
+        cell.userProfilePicture = UIImage(data: data!)
         cell.layoutSubviews()
         return cell
     }

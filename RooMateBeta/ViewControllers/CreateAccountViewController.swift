@@ -30,7 +30,6 @@ class CreateAccountViewController: UIViewController, UIImagePickerControllerDele
         view.addGestureRecognizer(tap)
     }
     
-    private var accessToUsersDB: AccessDataBase = AccessDataBase()
     private var userName: String? = nil
     private var password: String? = nil
     private var repeatedPassword: String? = nil
